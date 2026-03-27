@@ -1,0 +1,7 @@
+# --- Haptic Simulator Dependencies ---
+
+# Used for the visual interface, rendering, and touch input handling
+pygame>=2.0.0
+
+# Used for VISA communication with the signal generator hardware
+pyvisa>=1.11.3
