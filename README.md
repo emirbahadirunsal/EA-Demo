@@ -36,7 +36,7 @@ The application features three distinct haptic experiences. Press `Enter` to cyc
 
 **1. Clone the repository**
 ```bash
-git clone [https://github.com/emirbahadirunsal/EA-Demo.git](https://github.com/emirbahadirunsal/EA-Demo.git)
+git clone https://github.com/emirbahadirunsal/EA-Demo.git
 cd EA-Demo
 ```
 
