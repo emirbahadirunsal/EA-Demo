@@ -20,8 +20,7 @@ class HapticController:
     by only sending commands when values actually change.
     """
     def __init__(self):
-        # Initialize the VISA Resource Manager
-        self.rm = pyvisa.ResourceManager()
+        self.rm = None
         self.device = None
         self.is_connected = False
         
@@ -42,6 +41,7 @@ class HapticController:
         the necessary baseline configurations.
         """
         try:
+            self.rm = pyvisa.ResourceManager()
             # Open the resource connection
             self.device = self.rm.open_resource(VISA_ADDRESS)
             

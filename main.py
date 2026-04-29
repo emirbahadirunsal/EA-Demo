@@ -24,6 +24,13 @@ os.environ['SDL_VIDEO_WINDOW_POS'] = f"{X_KOORDINATI},{Y_KOORDINATI}"
 # Initialize all imported pygame modules
 pygame.init()
 
+# Use the configured resolution, but fall back to the actual display size if
+# the window would be larger than the screen (e.g. when running without the IR frame).
+_info = pygame.display.Info()
+if WIDTH > _info.current_w or HEIGHT > _info.current_h:
+    WIDTH = _info.current_w
+    HEIGHT = _info.current_h
+
 # Set up the display window. NOFRAME is used to remove standard window borders.
 screen = pygame.display.set_mode((WIDTH, HEIGHT), pygame.NOFRAME)
 pygame.display.set_caption("Haptic System Main")
