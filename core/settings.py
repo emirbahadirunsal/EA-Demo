@@ -45,8 +45,8 @@ HEIGHT = 1080
 
 # Input inversion flags. If the physical touch panel maps coordinates 
 # backwards compared to the display, set these to True to flip the axes.
-INVERT_X = True
-INVERT_Y = True
+INVERT_X = False
+INVERT_Y = False
 
 # ==========================================
 # Colors (RGB and RGBA Formats)
